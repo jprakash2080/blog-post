@@ -74,7 +74,7 @@
   ```
   ## Usage
 
-  You can use the provided SQL schema to create the MyBlog database and its tables. The database and tables are designed for managing blog posts and user authentication in your application.
+  You can use the provided SQL schema to create the MyBlog database and its tables. The database and tables are designed for managing blog posts and user authentication in application.
 
   To create the `myblog` database, use the following SQL command:
 
@@ -91,9 +91,9 @@
 
   ## Authentication
 
-  To authenticate and obtain a token, send a POST request to the `/login` endpoint with your username and password.
+  To authenticate and obtain a token, send a POST request to the `/login` endpoint with username and password.
 
-  Replace `<your-username>` and `<your-password>` with your actual credentials.
+  Replace `<your-username>` and `<your-password>` with actual credentials.
 
   ```bash
   curl --location 'http://localhost:8080/login' \
