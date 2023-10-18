@@ -118,7 +118,7 @@
   ```bash
   curl --location 'http://localhost:8080/auth/posts' \
   --header 'Content-Type: application/json' \
-  --header 'Authorization: Bearer <your-auth-token>' \
+  --header 'Authorization: <your-auth-token>' \
   --data '{
     "title": "<your-title>",
     "content": "<your-content>",
@@ -139,7 +139,7 @@
   ```bash
   curl --location --request PUT 'http://localhost:8080/auth/posts/<post-id>' \
   --header 'Content-Type: application/json' \
-  --header 'Authorization: Bearer <your-auth-token>' \
+  --header 'Authorization: <your-auth-token>' \
   --data '{
     "title": "<updated-title>",
     "content": "<updated-content>",
@@ -159,7 +159,7 @@
 
   ```bash
   curl --location 'http://localhost:8080/auth/fetchposts' \
-  --header 'Authorization: Bearer <your-Auth-token>'
+  --header 'Authorization: <your-Auth-token>'
 
   ```
 
@@ -175,7 +175,7 @@
 
   ```bash
   curl --location 'http://localhost:8080/auth/getpost/<post-id>' \
-  --header 'Authorization: Bearer <your-Auth-token>'
+  --header 'Authorization: <your-Auth-token>'
 
   ```
 
@@ -192,7 +192,7 @@
 
   ```bash
   curl --location 'http://localhost:8080/auth/getpost/<post-id>' \
-  --header 'Authorization: Bearer <your-Auth-token>'
+  --header 'Authorization: <your-Auth-token>'
   ```
 
   ## Postman Collection
