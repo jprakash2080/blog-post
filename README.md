@@ -1,6 +1,6 @@
-# Sample API Authentication with `curl`
+# API Authentication with `curl`
 
-This guide demonstrates how to authenticate with an API to obtain an access token using `curl`. In this example, we'll use the `/login` endpoint to obtain a JWT token for further API requests.
+This guide demonstrates how to authenticate with an API to obtain an access token using `curl`. In this example, we'll use the `/login` endpoint to obtain a token for further API requests.
 
 ## Authentication
 
@@ -18,7 +18,7 @@ curl --location 'http://localhost:8080/login' \
 
 ```
 
-# Create a New Blog Post with JWT Token
+# Create a New Blog Post with Auth Token
 
 This guide demonstrates how to use `curl` to create a new blog post through an API with authentication. In this example, we'll send a POST request to the `/auth/posts` endpoint to create a new blog post. The request includes an access token in the `Authorization` header for authentication.
 
@@ -26,12 +26,12 @@ This guide demonstrates how to use `curl` to create a new blog post through an A
 
 To create a new blog post, send a POST request to the `/auth/posts` endpoint. Be sure to include your JWT token in the `Authorization` header, along with the title, content, and author of the post.
 
-Replace `<your-jwt-token>`, `<your-title>`, `<your-content>`, and `<your-author>` with your actual token and post data.
+Replace `<your-auth-token>`, `<your-title>`, `<your-content>`, and `<your-author>` with your actual token and post data.
 
 ```bash
 curl --location 'http://localhost:8080/auth/posts' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer <your-jwt-token>' \
+--header 'Authorization: Bearer <your-auth-token>' \
 --data '{
   "title": "<your-title>",
   "content": "<your-content>",
